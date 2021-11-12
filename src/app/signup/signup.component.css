@@ -1,5 +1,28 @@
+header{
+    font-family: quando;
+}
 .navbar-custom{
     background-color: #53251E;
+}
+.navbar-brand{
+    color:white;
+    position: center;
+}
+.nav-text{
+    position: center;
+    
+}
+nav ul li a {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+button{
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    color: black;
 }
 .img{
     background: url(../img/bg.png) no-repeat center center fixed;
