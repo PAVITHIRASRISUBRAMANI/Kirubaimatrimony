@@ -1,0 +1,11 @@
+.navbar-custom{
+    background-color: #53251E;
+}
+.img{
+    background: url(../img/bg.png) no-repeat center center fixed;
+    min-height: 90vh;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    opacity: 20;
+}
