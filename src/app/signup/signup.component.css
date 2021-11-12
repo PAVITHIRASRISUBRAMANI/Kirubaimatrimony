@@ -1,4 +1,6 @@
-header{
+html {
+    max-width: 100%;
+    overflow-y: hidden;
     font-family: quando;
 }
 .navbar-custom{
@@ -24,6 +26,10 @@ button{
     background-color: white;
     color: black;
 }
+body{
+    overflow-y: hidden;
+    font-family: quando;
+}
 .img{
     background: url(../img/bg.png) no-repeat center center fixed;
     min-height: 90vh;
@@ -31,4 +37,26 @@ button{
     align-items: center;
     justify-content: center;
     opacity: 20;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    font-family: quando;
+    background-color:#53251E;  
+    color: white;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li a{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+.copyright{
+    text-align: center;
 }
