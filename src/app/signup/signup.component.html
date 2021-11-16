@@ -1,57 +1,60 @@
 <html>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container">
-            <a class="navbar-brand nav-text" href="#">
-                <img src="../img/logo.jpg" alt="" width="50" height="50" class="d-inline-block align-text-top">
-                              KIRUBAI MATRIMONY 
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PLANS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <button type="submit" class="btn btn-primary">SIGN IN</button>
-                    </li>
-                </ul>
-            </div>
+    <nav class="flex items-center justify-between flex-wrap p-6">
+        <div class="flex items-center flex-shrink-0 mr-6">
+          <img class ="h-12 w-12" src="img/logo2.png" alt="" />
+        </div>
+        <div class="flex items-left flex-shrink-0 mr-6 text-white font-bold">KIRUBAI MATRIMONY</div>
+        <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
+        <div class="text-sm sm:flex-grow">
+          <a  href="#"
+              class="block mt-4 sm:inline-block sm:mt-0 text-white mr-4">
+            Home
+          </a>
+          <a href="#"
+              class="block mt-4 sm:inline-block sm:mt-0 text-white mr-4">
+             Plans
+          </a>
+          <a href="#"
+              class="block mt-4 sm:inline-block sm:mt-0 text-white">
+             Contact Us
+          </a>
+        </div>
+        <div>
+          <a href="#"
+              class=" button inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black bg-white mt-4 md:mt-0">
+              Signin
+          </a>
+        </div>
         </div>
     </nav>
 </header>
 <body>
-    <div class="img">
+    <div class="bg-local">
 
     </div>
 </body>
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-3 item">
-                <h4>Kirubai Matrimony</h4>
+<footer class="px-4 py-8">
+    <div class="container flex flex-wrap items-center justify-center mx-auto space-y-4 sm:justify-between sm:space-y-0">
+        <div class="flex flex-row pr-3 space-x-4 sm:space-x-8">
+           <div class="flex flex-wrap items-center space-x-4 sm:space-x-8">
+                <h5>Kirubai Matrimony</h5>
                 <ul>
                     <li>+91-7305241841</li>
                     <li>adminin@kirubai.in</li>
                 </ul>
             </div>
-            <div class="col-sm-6 col-md-3 item">
+            <div class="flex flex-wrap pl-3 space-x-4 sm:space-x-8">
                 <ul>
                     <li><a>Terms & Conditions</a></li>
                     <li><a>Cancellation & Refund</a></li>
                     <li><a>Privacy Policy</a></li>
                 </ul>
             </div>
-            </div>
-        <p class="copyright">Company Name © 2018</p>
+        </div>
+    </div>
+    <div>
+        <p class="text-center">Company Name © 2018</p>
     </div>
 </footer>
 </html>
