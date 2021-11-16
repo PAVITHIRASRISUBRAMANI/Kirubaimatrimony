@@ -30,11 +30,58 @@
     </nav>
 </header>
 <body>
-    <div class="bg-local">
-        <div class="img pt-5 pl-20">
-           <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnJpZGUlMjBhbmQlMjBncm9vbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+    <div class="flex items-center min-h-screen bg-local">
+        <div class="flex-1 h-full max-w-4xl mx-auto bg-grey rounded-lg shadow-xl font-quando">
+          <div class="flex flex-col md:flex-row">
+            <div class="h-32 md:h-auto md:w-1/2">
+              <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnJpZGUlMjBhbmQlMjBncm9vbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                alt="img" />
+            </div>
+            <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2 bg-brown">
+              <div>
+                <h1 class="mb-4 text-2xl text-center text-black">
+                  REGISTRATION FORM
+                </h1>
+                <div class="relative border-b-2 focus-within:border-blue-500">
+                    <div class="mt-1 block text-sm font-medium text-gray-700">
+                    <select name="profile" id="profile">
+                        <option value="">Please Created For</option>
+                        <option value="">Daughter</option>
+                        <option value="">Son</option>
+                    </select>
+                   </div>
+                </div>
+                <div class="relative border-b-2 focus-within:border-blue-500">
+                    <input type="text" name="email" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
+                    <label for="email" class="absolute top-0 -z-1 duration-300 origin-0">Email</label>
+                  </div>
+                <div class="relative border-b-2 focus-within:border-blue-500">
+                    <input type="text" name="Gender" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
+                    <label for="email" class="absolute top-0 -z-1 duration-300 origin-0">Gender</label>
+                </div>
+                <div class="relative border-b-2 focus-within:border-blue-500">
+                    <input type="text" name="Date Of Birth" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
+                    <label for="email" class="absolute top-0 -z-1 duration-300 origin-0">Date Of birth</label>
+                </div>
+                <div class="relative border-b-2 focus-within:border-blue-500">
+                    <input type="text" name="Marital status" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
+                    <label for="email" class="absolute top-0 -z-1 duration-300 origin-0">Marital status</label>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="text-sm">By Clicking Register Now, you agree to our <br> <a href="#"
+                        class="terms hover:underline"> Terms & Conditions and Privacy Policy </a></p>
+                  </div>
+                <button
+                  class="block w-half px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white rounded-lg align-center"
+                  href="#">
+                  Register Now
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    
 </body>
 <footer class="px-4 py-8">
     <div class="container flex flex-wrap mx-auto space-y-4 sm:justify-between sm:space-y-0">
