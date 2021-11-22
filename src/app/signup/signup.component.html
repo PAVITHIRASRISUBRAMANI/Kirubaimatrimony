@@ -33,56 +33,106 @@
 </header>
 <body>
     <div class="flex items-center min-h-screen bg-local">
-        <div class="flex-1 h-full max-w-4xl mx-auto bg-grey rounded-lg shadow-xl font-quando">
-          <div class="flex flex-col md:flex-row">
-            <div class="h-30 sm:h-auto md:w-1/2">
-              <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnJpZGUlMjBhbmQlMjBncm9vbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+      <div class="flex-1 h-full max-w-4xl mx-auto bg-grey rounded-lg shadow-xl font-quando">
+      <div class="flex flex-col md:flex-row">
+      <div class="h-30 sm:h-auto md:w-1/2">
+        <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnJpZGUlMjBhbmQlMjBncm9vbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
                 alt="img" />
+      </div>
+            
+      <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2 bg-brown">
+        <div>
+          <h1 class="mb-4 text-2xl text-center text-black">
+            REGISTRATION FORM
+          </h1>
+        
+        <div class="flex flex-wrap -mx-3 mb-2">
+          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <div class="relative">
+              <select class="block appearance-none w-full text-gray-700 py-1 px-4 pr-8 rounded" id="grid-state">
+              <option>Profile Created For</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
             </div>
-            <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2 bg-brown">
-              <div>
-                <h1 class="mb-4 text-2xl text-center text-black">
-                  REGISTRATION FORM
-                </h1>
-                <div class="relative border-b-2 focus-within:border-blue-500">
-                    <div class="mt-1 block text-sm font-medium text-gray-700">
-                    <select name="profile" id="profile">
-                        <option value="">Please Created For</option>
-                        <option value="">Daughter</option>
-                        <option value="">Son</option>
-                    </select>
-                   </div>
-                </div>
-                <div class="relative border-b-2 focus-within:border-blue-500">
-                    <input type="text" name="email" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
-                    <label for="email" class="absolute top-0 -z-1 duration-300 origin-0">Email</label>
-                  </div>
-                <div class="relative border-b-2 focus-within:border-blue-500">
-                    <input type="text" name="Gender" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
-                    <label for="email" class="absolute top-0 -z-1 duration-300 origin-0">Gender</label>
-                </div>
-                <div class="relative border-b-2 focus-within:border-blue-500">
-                    <input type="text" name="Date Of Birth" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
-                    <label for="email" class="absolute top-0 -z-1 duration-300 origin-0">Date Of birth</label>
-                </div>
-                <div class="relative border-b-2 focus-within:border-blue-500">
-                    <input type="text" name="Marital status" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
-                    <label for="email" class="absolute top-0 -z-1 duration-300 origin-0">Marital status</label>
-                </div>
-                <div class="mt-4 text-center">
-                    <p class="text-sm">By Clicking Register Now, you agree to our <br> <a href="#"
-                        class="terms hover:underline"> Terms & Conditions and Privacy Policy </a></p>
-                  </div>
-                <button
-                  class="block m-auto w-half px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white rounded-lg align-center"
-                  href="#">
-                  Register Now
-                </button>
-              </div>
             </div>
           </div>
+          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <div class="relative">
+              <select class="block appearance-none w-full text-gray-700 py-1 px-4 pr-8 rounded" id="grid-state">
+              <option>Denomination</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+            </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 px-3 pt-2 mb-6 md:mb-0">
+            <input class="appearance-none block w-full py-1 px-4 pr-8 rounded" id="grid-city" type="text" placeholder="Name">
+          </div>
+          <div class="w-full md:w-1/2 px-3 pt-2 mb-6 md:mb-0">
+            <div class="relative">
+              <select class="block appearance-none w-full py-1 px-4 pr-8 rounded" id="grid-state">
+              <option>Division</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+            </div>
+            </div>
+          </div>
+            <div class="inline-flex w-full md:w-1/2 px-3 pt-2 mb-6 md:mb-0">
+              <button class="py-2 px-3 rounded-l text-white">
+                Male
+              </button>
+              <button class="py-2 px-3 rounded-r bg-white">
+                Female
+              </button>
+            </div>
+          <div class="w-full md:w-1/2 px-3 pt-2 mb-6 md:mb-0">
+            <input class="appearance-none block w-full py-1 px-4 pr-8 rounded" id="grid-city" type="text" placeholder="Mobile Number">
+          </div>
+          <div class="w-full md:w-1/2 px-3 pt-2 mb-6 md:mb-0">
+            <input class="appearance-none block w-full py-1 px-4 pr-8 rounded" id="grid-city" type="text" placeholder="Date Of Birth">
+          </div>
+          <div class="w-full md:w-1/2 px-3 pt-1 mb-6 md:mb-0">
+            <input class="appearance-none block w-full py-1 px-4 pr-8 rounded" id="grid-city" type="text" placeholder="Email ID">
+          </div>
+          <div class="w-full md:w-1/2 px-3 pt-2 mb-6 md:mb-0">
+            <div class="relative">
+              <select class="block appearance-none w-full py-1 px-4 pr-8 rounded" id="grid-state">
+              <option>Marital Status</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+            </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 px-3 pt-2 mb-6 md:mb-0">
+            <input class="appearance-none block w-full py-1 px-4 pr-8 rounded" id="grid-city" type="text" placeholder="Password">
+          </div>
         </div>
-      </div> 
+        <div class="mt-4 text-center">
+          <p class="text-sm">By Clicking Register Now, you agree to our <br> <a href="#"
+             class="terms hover:underline"> Terms & Conditions and Privacy Policy </a></p>
+        </div> 
+        <button
+          class="block m-auto w-half px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white rounded-lg align-center"
+          href="#">
+          Register Now
+          </button>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div> 
 </body>
 <footer class="px-3 py-3">
     <div class="container flex flex-col space-y-2">
