@@ -14,7 +14,7 @@ header a{
 }
 .bg-local{
     background: url(../../assets/img/bg.png);
-    min-height: 72vh;
+    min-height: 74vh;
     background-size: cover;
     align-items: center;
     }
