@@ -1,0 +1,12 @@
+footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    max-height: 16vh;
+    font-size: 12px;
+    background-color:#53251E;  
+    color: white;
+    overflow-y: hidden;
+    font-family: quando;
+}
