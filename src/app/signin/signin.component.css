@@ -1,0 +1,21 @@
+body {
+    max-width: 100%;
+    overflow-y: hidden;
+    font-family: quando;
+}
+.bg-local{
+    background: url(../../assets/img/bg.png);
+    min-height: 74vh;
+    background-size: cover;
+    align-items: center;
+    }
+    .img{
+        width: 600px;
+    }
+    button{
+        background-color:#53251E ;
+    }
+    .terms
+    {
+        color:#53251E;
+    }

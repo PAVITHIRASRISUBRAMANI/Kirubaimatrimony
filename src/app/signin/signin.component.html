@@ -1,1 +1,38 @@
-<p>signin works!</p>
+<body>
+    <div class="flex items-center justify-center min-h-screen bg-local">
+      <div class="h-full max-w-sm mt-16 px-9 pt-12 mb-12 ml-2 bg-white bg-opacity-25 rounded-lg shadow-xl font-quando">
+      <div class="flex flex-col-reverse md:flex-row">
+        <div>
+          <h1 class="mb-8 text-2xl text-center text-black">
+            SIGN IN
+          </h1>
+        <div class="flex flex-wrap -mx-3 mb-4 mt-4 ">  
+          <div class="w-full relative px-4 pt-2 mb-6 md:mb-0">
+            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black py-1 px-1 pr-8" id="grid-city" type="text" placeholder="Email ID">
+          </div>
+          <div class="w-full relative px-4 pt-4 mb-6 md:mb-0">
+            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black py-1 px-1 pr-8" id="grid-city" type="text" placeholder="Password">
+          </div>
+        </div>
+          <div class="mt-7 mr-2 mb-2 flex inline-flex justify-center items-center w-full cursor-pointer">
+            <label for="remember_me">
+                <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
+                <span class="ml-2 text-sm text-black">
+                    Remember Me
+                </span>
+            </label>
+          </div>
+        <button
+          class="block m-auto w-half px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white rounded-lg align-center"
+          href="#">
+          Sign In
+        </button>
+        <div class="mt-7 mb-10 flex justify-center items-center">
+            <label class="mr-2 text-black" >Forget Password?  |</label>
+            <a [routerLink]="['/signup']" class=" text-black no-underline">New User?</a>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div> 
+</body>
