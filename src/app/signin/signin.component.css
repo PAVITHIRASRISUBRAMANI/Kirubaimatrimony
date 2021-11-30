@@ -5,7 +5,7 @@ body {
 }
 .bg-local{
     background: url(../../assets/img/bg.png);
-    min-height: 78vh;
+    min-height: 79vh;
     background-size: cover;
     align-items: center;
     }

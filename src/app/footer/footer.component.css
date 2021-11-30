@@ -10,3 +10,8 @@ footer{
     overflow-y: hidden;
     font-family: quando;
 }
+@media only screen and (max-width: 640px){
+    footer{
+        position: relative;
+    }
+}
