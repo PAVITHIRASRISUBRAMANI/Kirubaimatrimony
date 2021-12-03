@@ -9,4 +9,7 @@ footer{
     footer{
         position: relative;
     }
+    footer li{
+       text-align: center;
+    }
 }
