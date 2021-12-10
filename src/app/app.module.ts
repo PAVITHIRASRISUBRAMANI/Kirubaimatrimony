@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SigninComponent } from './signin/signin.component';
 import { RouterModule } from '@angular/router';
+import { FormComponent } from './form/form.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { RouterModule } from '@angular/router';
     SignupComponent,
     HeaderComponent,
     FooterComponent,
-    SigninComponent
+    SigninComponent,
+    FormComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
