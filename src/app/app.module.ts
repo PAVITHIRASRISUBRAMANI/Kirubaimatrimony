@@ -10,6 +10,7 @@ import { SigninComponent } from './signin/signin.component';
 import { RouterModule } from '@angular/router';
 import { FormComponent } from './form/form.component';
 import { ProfileComponent } from './profile/profile.component';
+import { PrivateheaderComponent } from './privateheader/privateheader.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProfileComponent } from './profile/profile.component';
     FooterComponent,
     SigninComponent,
     FormComponent,
-    ProfileComponent
+    ProfileComponent,
+    PrivateheaderComponent
   ],
   imports: [
     BrowserModule,
