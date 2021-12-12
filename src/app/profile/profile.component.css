@@ -9,4 +9,10 @@ body {
     background-size: cover;
     align-items: center;
     }
+.content{
+    float: right;
+}
+.imgContainer{
+    float:left;
+}
 
