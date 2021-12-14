@@ -1,0 +1,18 @@
+body {
+    max-width: 100%;
+    overflow-y: hidden;
+    font-family: quando;
+}
+.bg-local{
+    background: url(../../assets/img/bgacnew.png);
+    min-height: 79vh;
+    background-size: cover;
+    align-items: center;
+    }
+.img{
+    width: 900px;
+}
+.terms
+{
+    color:#53251E;
+}

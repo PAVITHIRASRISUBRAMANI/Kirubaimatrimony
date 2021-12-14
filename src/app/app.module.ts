@@ -11,6 +11,8 @@ import { RouterModule } from '@angular/router';
 import { FormComponent } from './form/form.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PrivateheaderComponent } from './privateheader/privateheader.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { PrivateheaderComponent } from './privateheader/privateheader.component'
     SigninComponent,
     FormComponent,
     ProfileComponent,
-    PrivateheaderComponent
+    PrivateheaderComponent,
+    AboutusComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
