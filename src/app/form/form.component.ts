@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  step: any =1;
+  constructor() {}
+  
+  ngOnInit():void{
   }
-
+  submit(){
+    this.step = this.step + 1;
+  }
 }
+  
+

@@ -1,14 +1,16 @@
 <body>
-    <div class="flex items-center justify-center min-h-screen bg-local">
-      <div class="h-full max-w-4xl mt-12 px-12 py-12 pb-20 pt-12 mb-12 ml-2 bg-white bg-opacity-50 rounded-3xl shadow-3xl font-quando font">
+  <form (ngSubmit)="submit()">
+      <div class="flex items-center justify-center min-h-screen bg-local">
+      <div class="h-full max-w-xl mt-12 px-12 py-12 pb-20 pt-12 mb-12 ml-2 bg-white bg-opacity-50 rounded-3xl shadow-3xl font-quando font">
       <div class="flex flex-col-reverse md:flex-row text-sm md:text-base">
         <div>
           <h1 class="mb-12 text-2xl text-center text-black font-bold">
-            REGISTER YOUR PROFILE
+            PROFILE REGISTRATION FORM
           </h1>
-        <label class="px-2 text-black font-bold">ABOUT</label> 
+        <div *ngIf="step == 1">
+        <label class="px-2 text-black font-bold">Profile Information</label> 
         <div class="flex flex-wrap -mx-3 mb-4 mt-4 "> 
-            <div class="w-full md:w-full px-3 pt-4 mb-6 md:mb-0">
+            <div class="w-full md:w-full px-3 pt-4 mb-8 md:mb-0">
                 <div class="relative">
                 <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
                 <option>Matrimonial Profile is created for</option>
@@ -20,16 +22,16 @@
                 </div>
                 </div>
                 </div>
-            <div class="w-full md:w-1/3 relative px-3 pt-4 mb-8 md:mb-0">
+            <div class="w-full md:w-1/3 relative px-3 pt-8 mb-8 md:mb-0">
             <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="First Name">
             </div>
-            <div class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0">
+            <div class="w-full md:w-1/3 relative px-3 pt-8 mb-8 md:mb-0">
             <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Middle Name">
             </div>
-            <div class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0">
+            <div class="w-full md:w-1/3 relative px-3 pt-8 mb-8 md:mb-0">
             <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Last Name">
             </div>
-            <div class="w-full md:w-1/3 px-3 pt-4 mb-6 md:mb-0">
+            <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
             <div class="relative">
             <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
             <option>Gender</option>
@@ -41,10 +43,15 @@
             </div>
             </div>
             </div>
-            <div class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0">
+            <div class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0">
             <input class="appearance-none sd border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black text-black" type="date" placeholder="Date Of Birth">
             </div>
-            <div class="w-full md:w-1/3 px-3 pt-4 mb-6 md:mb-0">
+          </div>
+        </div>
+        <div *ngIf="step == 2">  
+        <label class="px-2 text-black font-bold">Profile Information</label> 
+        <div class="flex flex-wrap -mx-3 mb-4 mt-4 ">
+            <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
             <div class="relative">
             <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
             <option>Marital Status</option>
@@ -56,40 +63,120 @@
             </div>
             </div>
             </div>
-            <div class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0">
+            <div class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0">
+              <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Qualification">
+            </div>
+            <div class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0">
+              <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Occupation">
+            </div>
+            <div class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0">
+              <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Salary(INR)">
+            </div>
+            <div class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0">
             <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Height(cm)">
             </div>
-            <div class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0">
-            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Weight(kg)">
+            <div class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0">
+            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Weight(kgs)">
             </div>
-            <div class="w-full md:w-1/3 px-3 pt-4 mb-6 md:mb-0">
+            <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
+              <div class="relative">
+              <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
+              <option>Complexion</option>
+              <option>Fair</option>
+              <option>Brown</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-1 text-black">
+              <svg class="fill-current h-4 w-4 bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+              </div>
+              </div>
+              </div>
+              <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
+              <div class="relative">
+              <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
+              <option>Mother Tongue</option>
+              <option>Tamil</option>
+              <option>English</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-1 text-black">
+              <svg class="fill-current h-4 w-4 bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+              </div>
+              </div>
+              </div>
+              <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
+              <div class="relative">
+              <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
+              <option>Nationality</option>
+              <option>India</option>
+              <option>USA</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-1 text-black">
+              <svg class="fill-current h-4 w-4 bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+              </div>
+              </div>
+              </div>
+              <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
+              <div class="relative">
+              <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
+              <option>Family</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-1 text-black">
+              <svg class="fill-current h-4 w-4 bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+              </div>
+              </div>
+              </div>
+              <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
+              <div class="relative">
+              <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
+              <option>Do you smoke?</option>
+              <option>Yes</option>
+              <option>No</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-1 text-black">
+              <svg class="fill-current h-4 w-4 bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+              </div>
+              </div>
+              </div>
+              <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
+              <div class="relative">
+              <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
+              <option>Do you drink?</option>
+              <option>Yes</option>
+              <option>No</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-1 text-black">
+              <svg class="fill-current h-4 w-4 bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+              </div>
+              </div>
+              </div>
+              </div>
+        </div>
+        <div *ngIf="step == 3">
+        <label class="px-2 mb-2 mt-4 text-black font-bold">Contact Information</label>
+        <div class="flex flex-wrap -mx-3 mb-4 mt-4 "> 
+          <div class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0">
+            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Building Number">
+          </div>
+          <div class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0">
+            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Building Name">
+          </div>
+          <div class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0">
+            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Street Name">
+          </div>
+          <div class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0">
+            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="City">
+          </div>
+          <div class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0">
+            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="State">
+          </div>
+          <div class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0">
+            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Zip Code">
+          </div>
+          <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
             <div class="relative">
             <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
-            <option>Complexion</option>
-            <option>Fair</option>
-            <option>Brown</option>
-            </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-1 text-black">
-            <svg class="fill-current h-4 w-4 bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-            </div>
-            </div>
-            </div>
-            <div class="w-full md:w-1/3 px-3 pt-4 mb-6 md:mb-0">
-            <div class="relative">
-            <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
-            <option>Mother Tongue</option>
-            <option>Tamil</option>
-            <option>English</option>
-            </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-1 text-black">
-            <svg class="fill-current h-4 w-4 bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-            </div>
-            </div>
-            </div>
-            <div class="w-full md:w-1/3 px-3 pt-4 mb-6 md:mb-0">
-            <div class="relative">
-            <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
-            <option>Nationality</option>
+            <option>Country</option>
             <option>India</option>
             <option>USA</option>
             </select>
@@ -98,95 +185,27 @@
             </div>
             </div>
             </div>
-            <div class="w-full md:w-1/3 px-3 pt-4 mb-6 md:mb-0">
+          <div class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0">
+            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="WhatsApp Number">
+          </div>
+        </div>
+        </div>
+        <div *ngIf="step == 4">
+        <label class="px-2 mb-2 mt-4 text-black font-bold">Religious Information</label>
+        <div class="flex flex-wrap -mx-3 mb-4 mt-4 "> 
+            <div class="w-full md:w-1/full px-3 pt-4 mb-6 md:mb-0">
             <div class="relative">
             <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
-            <option>Family</option>
-            <option>Option 1</option>
-            <option>Option 2</option>
+            <option>Religion</option>
+            <option>Christian</option>
+            <option>Hindu</option>
             </select>
             <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-1 text-black">
             <svg class="fill-current h-4 w-4 bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
             </div>
             </div>
             </div>
-        </div>
-        <label class="px-2 mb-2 mt-4 text-black font-bold">PERSONAL INFORMATION</label>
-        <div class="flex flex-wrap -mx-3 mb-4 mt-4 "> 
-          <div class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0">
-            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Qualification">
-          </div>
-          <div class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0">
-            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Occupation">
-          </div>
-          <div class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0">
-            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Salary(INR)">
-          </div>
-        </div>
-        <label class="px-2 mb-2 mt-4 text-black font-bold">CONTACT INFORMATION</label>
-        <div class="flex flex-wrap -mx-3 mb-4 mt-4 "> 
-          <div class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0">
-            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Building Number">
-          </div>
-          <div class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0">
-            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Building Name">
-          </div>
-          <div class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0">
-            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Street Name">
-          </div>
-          <div class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0">
-            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="City">
-          </div>
-          <div class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0">
-            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="State">
-          </div>
-          <div class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0">
-            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Zip Code">
-          </div>
-          <div class="w-full md:w-full relative px-3 pt-4 mb-6 md:mb-0">
-            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="WhatsApp Number">
-          </div>
-        </div>
-        <label class="px-2 mb-2 mt-4 text-black font-bold">HABIT INFORMATION</label>
-        <div class="flex flex-wrap -mx-3 mb-4 mt-4 ">
-          <label class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0 text-black">Do you smoke?</label> 
-          <div class="w-full md:w-1/3 relative px-5 pt-4 mb-6 md:mb-0">
-            <label for="remember_me">
-                <input id="remember_me" type="radio" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
-                <span class="ml-1 text-sm text-black">
-                    Yes
-                </span>
-            </label>
-          </div>
-          <div class="w-full md:w-1/3 relative px-5 pt-4 mb-6 md:mb-0">
-            <label for="remember_me">
-                <input id="remember_me" type="radio" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
-                <span class="ml-1 text-sm text-black">
-                    No
-                </span>
-            </label>
-          </div>
-          <label class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0 text-black">Do you drink?</label> 
-          <div class="w-full md:w-1/3 relative px-5 pt-4 mb-6 md:mb-0">
-            <label for="remember_me">
-                <input id="remember_me" type="radio" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
-                <span class="ml-1 text-sm text-black">
-                    Yes
-                </span>
-            </label>
-          </div>
-          <div class="w-full md:w-1/3 relative px-5 pt-4 mb-6 md:mb-0">
-            <label for="remember_me">
-                <input id="remember_me" type="radio" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
-                <span class="ml-1 text-sm text-black">
-                    No
-                </span>
-            </label>
-          </div>
-        </div>
-        <label class="px-2 mb-2 mt-4 text-black font-bold">RELIGIOUS INFORMATION</label>
-        <div class="flex flex-wrap -mx-3 mb-4 mt-4 "> 
-            <div class="w-full md:w-1/3 px-3 pt-4 mb-6 md:mb-0">
+            <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
             <div class="relative">
             <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
             <option>Denomination</option>
@@ -198,7 +217,7 @@
             </div>
             </div>
             </div>
-            <div class="w-full md:w-1/3 px-3 pt-4 mb-6 md:mb-0">
+            <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
             <div class="relative">
             <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
             <option>Division</option>
@@ -211,9 +230,11 @@
             </div>
             </div>
         </div>
-        <label class="px-2 mb-2 mt-4 text-black font-bold">MATCH EXPECTATIONS</label>
+        </div>
+        <div *ngIf="step == 5">
+        <label class="px-2 mb-2 mt-4 text-black font-bold">Match Expectations</label>
         <div class="flex flex-wrap -mx-3 mb-4 mt-4 "> 
-            <div class="w-full md:w-1/3 px-3 pt-4 mb-6 md:mb-0">
+            <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
             <div class="relative">
             <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
             <option>Marital Status</option>
@@ -225,7 +246,19 @@
             </div>
             </div>
             </div>
-            <div class="w-full md:w-1/3 px-3 pt-4 mb-6 md:mb-0">
+            <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
+              <div class="relative">
+              <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
+              <option>Religion</option>
+              <option>Christian</option>
+              <option>Hindu</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-1 text-black">
+              <svg class="fill-current h-4 w-4 bg-transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+              </div>
+              </div>
+              </div>
+            <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
             <div class="relative">
             <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
             <option>Denomination</option>
@@ -237,7 +270,7 @@
             </div>
             </div>
             </div>
-            <div class="w-full md:w-1/3 px-3 pt-4 mb-6 md:mb-0">
+            <div class="w-full md:w-1/2 px-3 pt-4 mb-6 md:mb-0">
             <div class="relative">
             <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
             <option>Division</option>
@@ -251,8 +284,8 @@
             </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-4 mt-4 ">
-            <label class="w-full md:w-1/3 relative px-3 pt-4 mb-6 md:mb-0 text-black">Age Group</label> 
-            <div class="w-full md:w-1/3 px-3 pt-4 mb-6 md:mb-0">
+            <label class="w-full md:w-1/6 relative px-3 pt-4 mb-6 md:mb-0 text-black">Age Group</label> 
+            <div class="w-full md:w-1/6 px-2 pt-4 mb-6 md:mb-0">
             <div class="relative">
             <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
             <option>From</option>
@@ -264,7 +297,7 @@
             </div>
             </div>
             </div>
-            <div class="w-full md:w-1/3 px-3 pt-4 mb-6 md:mb-0">
+            <div class="w-full md:w-1/6 px-3 pt-4 mb-6 md:mb-0">
             <div class="relative">
             <select class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full text-black" id="grid-state">
             <option>To</option>
@@ -276,15 +309,17 @@
             </div>
             </div>
             </div>
-            <div class="w-full md:w-full relative px-3 pt-4 mb-6 md:mb-0">
-              <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="What are you looking for in a person?">
-            </div>
         </div>
+        </div>
+        <div *ngIf="step == 6">
+          <div class="w-full md:w-full relative px-2 pt-4 mb-6 md:mb-0">
+            <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="What are you looking for in a person?">
+          </div>
         <label class="px-2 mb-2 mt-4 text-black font-bold">ADD YOUR PHOTOGRAPHS</label>
         <div class="flex flex-wrap -mx-3 mb-4 mt-4 ">
           <label class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0 text-black">Add your profile photo</label> 
           <button
-          class="block m-0 w-half px-4 py-2 mt-4 text-sm font-medium leading-5 bg-gradient-to-b from-red-700 to-red-900 text-center text-white rounded-lg align-center"
+          class="block m-0 w-half px-4 py-1 mt-4 text-sm font-medium leading-5 bg-gradient-to-b from-red-700 to-red-900 text-center text-white rounded-lg align-center"
           href="#">
           Upload
           </button>
@@ -292,20 +327,26 @@
         <div class="flex flex-wrap -mx-3 mb-4 mt-4 ">
           <label class="w-full md:w-1/2 relative px-3 pt-4 mb-6 md:mb-0 text-black">Add your additional photos</label> 
           <button
-          class="block m-0 w-half px-4 py-2 mt-4 text-sm font-medium leading-5 bg-gradient-to-b from-red-700 to-red-900 text-center text-white rounded-lg align-center"
+          class="block m-0 w-half px-4 py-1 mt-4 text-sm font-medium leading-5 bg-gradient-to-b from-red-700 to-red-900 text-center text-white rounded-lg align-center"
           href="#">
           Upload
           </button>
         </div>
-        <div class="flex flex-wrap -mx-3 mb-4 mt-20 ">
-        <button
-          class="block m-auto w-half px-4 py-2 mt-10 text-sm font-medium leading-5 bg-gradient-to-b from-red-700 to-red-900 text-center text-white rounded-lg align-center"
-          [routerLink]="['/profile']">
-          Submit
-        </button>
+        </div>
+        <div class="flex flex-wrap -mx-3 mb-1 mt-10 ">
+          <button
+            class="block m-auto w-half px-4 py-2 mt-8 text-sm font-medium leading-5 bg-gradient-to-b from-red-700 to-red-900 text-center text-white rounded-lg align-center" *ngIf="step != 6 ">
+            Continue
+          </button>
+          <button
+            class="block m-auto w-half px-4 py-2 mt-10 text-sm font-medium leading-5 bg-gradient-to-b from-red-700 to-red-900 text-center text-white rounded-lg align-center" *ngIf="step == 6 "
+            [routerLink]="['/profile']">
+            Submit
+          </button>
+          </div>
         </div>
         </div>
         </div>
-        </div>
-    </div> 
+    </div>  
+    </form>
 </body>

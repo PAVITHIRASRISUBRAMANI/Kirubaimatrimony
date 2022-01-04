@@ -13,6 +13,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { PrivateheaderComponent } from './privateheader/privateheader.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -25,12 +27,14 @@ import { ContactusComponent } from './contactus/contactus.component';
     ProfileComponent,
     PrivateheaderComponent,
     AboutusComponent,
-    ContactusComponent
+    ContactusComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
