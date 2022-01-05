@@ -14,6 +14,8 @@ import { PrivateheaderComponent } from './privateheader/privateheader.component'
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PrivateheaderComponent,
     AboutusComponent,
     ContactusComponent,
+    ErrorpageComponent,
+    ResetpasswordComponent,
   ],
   imports: [
     BrowserModule,
