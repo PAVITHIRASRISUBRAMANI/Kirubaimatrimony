@@ -8,6 +8,9 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import { TermsandconditionsComponent } from './termsandconditions/termsandconditions.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { CancellationandrefundComponent } from './cancellationandrefund/cancellationandrefund.component';
 
 
 const routes: Routes = [
@@ -18,7 +21,10 @@ const routes: Routes = [
   {path:'contactus',component:ContactusComponent},
   {path:'aboutus',component:AboutusComponent},
   {path:'errorpage',component:ErrorpageComponent},
-  {path:'resetpassword',component:ResetpasswordComponent}
+  {path:'resetpassword',component:ResetpasswordComponent},
+  {path:'termsandconditions',component:TermsandconditionsComponent},
+  {path:'privacypolicy',component:PrivacypolicyComponent},
+  {path:'cancellationandrefund',component:CancellationandrefundComponent}
 ];
 
 @NgModule({

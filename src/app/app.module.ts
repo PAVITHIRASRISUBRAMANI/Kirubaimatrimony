@@ -16,6 +16,9 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import { TermsandconditionsComponent } from './termsandconditions/termsandconditions.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { CancellationandrefundComponent } from './cancellationandrefund/cancellationandrefund.component';
 
 
 @NgModule({
@@ -32,6 +35,9 @@ import { ResetpasswordComponent } from './resetpassword/resetpassword.component'
     ContactusComponent,
     ErrorpageComponent,
     ResetpasswordComponent,
+    TermsandconditionsComponent,
+    PrivacypolicyComponent,
+    CancellationandrefundComponent,
   ],
   imports: [
     BrowserModule,
