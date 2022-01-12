@@ -5,7 +5,8 @@ body {
 }
 .bg-local{
     background: url(../../assets/img/bgfp.jpg);
-    min-height:72vh;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     }
 
