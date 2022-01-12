@@ -11,6 +11,12 @@ import { ResetpasswordComponent } from './resetpassword/resetpassword.component'
 import { TermsandconditionsComponent } from './termsandconditions/termsandconditions.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { CancellationandrefundComponent } from './cancellationandrefund/cancellationandrefund.component';
+import { AccomodationComponent } from './ourservices/accomodation/accomodation.component';
+import { LocationComponent } from './ourservices/location/location.component';
+import { GiftregistryComponent } from './ourservices/giftregistry/giftregistry.component';
+import { MarriagecounsellingComponent } from './ourservices/marriagecounselling/marriagecounselling.component';
+import { PremarriagecounsellingComponent } from './ourservices/premarriagecounselling/premarriagecounselling.component';
+import { AssistedserviceComponent } from './ourservices/assistedservice/assistedservice.component';
 
 
 const routes: Routes = [
@@ -24,7 +30,13 @@ const routes: Routes = [
   {path:'resetpassword',component:ResetpasswordComponent},
   {path:'termsandconditions',component:TermsandconditionsComponent},
   {path:'privacypolicy',component:PrivacypolicyComponent},
-  {path:'cancellationandrefund',component:CancellationandrefundComponent}
+  {path:'cancellationandrefund',component:CancellationandrefundComponent},
+  {path:'location',component:LocationComponent},
+  {path:'giftregistry',component:GiftregistryComponent},
+  {path:'accomodation',component:AccomodationComponent},
+  {path:'marriagecounselling',component:MarriagecounsellingComponent},
+  {path:'premarriagecounselling',component:PremarriagecounsellingComponent},
+  {path:'assistedservice',component:AssistedserviceComponent}
 ];
 
 @NgModule({

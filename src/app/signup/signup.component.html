@@ -1,52 +1,126 @@
 <body>
-    <div class="flex items-center min-h-screen bg-local">
-      <div class="flex-1 h-full max-w-7xl mx-auto bg-grey rounded-lg shadow-xl font-quando">
-      <div class="flex flex-col md:flex-row">
+    <div class ="bg m-0 p-0">
+    <div class="flex items-center">
+      <div class="flex-1 h-full max-w-7xl mx-auto bg-grey bg-opacity-25 rounded-lg font-quando">
+      <div class="flex flex-col mt-16 mr-4 md:mt-24 md:flex-row">
       <div class="h-30 md:w-1/2 hidden md:block">
         <img class="object-cover w-full h-full" src="../../assets/img/newside.png"
                 alt="img" />
       </div>    
-      <div class="flex items-center justify-center p-6 sm:object-scale-down sm:p-12 md:w-1/2 bg-brown">
+      <div class="flex items-center justify-center bg-white bg-opacity-25 rounded-lg shadow-xl pl-6 ml-6 sm:object-scale-down sm:p-12 md:w-1/2 bg-brown">
         <div>
-          <h1 class="mb-4 text-2xl text-center text-black">
+          <h1 class="mb-8 md:mb-8 mt-8 md:mt-8 text-2xl text-center text-black">
             REGISTRATION FOR FREE
           </h1>
         
         <div class="flex flex-wrap -mx-3 mb-2 ">
-          <div class="w-full md:w-1/3 px-4 pt-2 mb-6 md:mb-0">
+          <div class="w-full md:w-1/3 px-4 pt-2 mb-6 mr-8 md:mr-0 md:mb-0">
             <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="First Name">
           </div>
-          <div class="w-full md:w-1/3 px-4 pt-2 mb-6 md:mb-0">
+          <div class="w-full md:w-1/3 px-4 pt-2 mb-6 mr-8 md:mr-0 md:mb-0">
             <input class="appearance-none border-b-2 border-yellow-900 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Middle Name">
           </div>
-          <div class="w-full md:w-1/3 px-4 pt-2 mb-6 md:mb-0">
+          <div class="w-full md:w-1/3 px-4 pt-2 mb-6 mr-8 md:mr-0 md:mb-0">
             <input class="appearance-none border-yellow-900 border-b-2 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Last Name">
           </div>
-          <div class="w-full md:w-full px-4 pt-2 mt-2 mb-6 md:mb-0">
+          <div class="w-full md:w-full px-4 pt-2 mt-2 mb-6 mr-8 md:mr-2 md:mb-0">
             <input class="appearance-none border-yellow-900 border-b-2 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Email ID">
           </div>
-          <div class="w-full md:w-full px-4 pt-2 mt-2 mb-6 md:mb-0">
+          <div class="w-full md:w-full px-4 pt-2 mt-2 mb-6 mr-8 md:mr-2 md:mb-0">
             <input class="appearance-none border-yellow-900 border-b-2 bg-transparent focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Mobile Number">
           </div>
-          <div class="w-full md:w-full px-4 pt-2 mt-2 mb-6 md:mb-0">
+          <div class="w-full md:w-full px-4 pt-2 mt-2 mb-6 mr-8 md:mr-2 md:mb-0">
             <input class="appearance-none bg-transparent border-yellow-900 border-b-2 focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Password">
           </div>
-          <div class="w-full md:w-full px-4 pt-2 mt-2 mb-6 align-right md:mb-0">
+          <div class="w-full md:w-full px-4 pt-2 mt-2 mb-6 mr-8 md:mr-2 align-right md:mb-0">
             <input class="appearance-none bg-transparent border-yellow-900 border-b-2 focus:outline-none block w-full placeholder-black" id="grid-city" type="text" placeholder="Confirm Password">
           </div>
         </div>
-        <div class="mt-4 pt-4 text-center">
+        <div class="pt-2 pr-2 md:mt-8 md:pr-2 text-center">
           <p class="text-sm">By Clicking Register Now, I agree to Wedding Feast Matriony <br> <a href="#"
              class="terms hover:underline">Terms & Conditions and Privacy Policy </a></p>
-        </div> 
+        </div>
+        <div class="pt-2 pb-4 mb:pt-4 md:pb-4">
         <button
-          class="block m-auto w-half px-4 py-2 mt-4 text-sm bg-gradient-to-b from-red-700 to-red-900 font-medium leading-5 text-center text-white rounded-lg align-center"
+          class="block m-auto w-half px-4 py-2 mt-4  text-sm bg-gradient-to-b from-red-700 to-red-900 font-medium leading-5 text-center text-white rounded-lg align-center"
           href="#">
           Register
           </button>
+          </div>
         </div>
         </div>
         </div>
       </div>
     </div> 
+      <div class="md:pl-8 pb-4 md:ml-24 mt-8 pr-4 md:pr-2 pl-4">
+      <div class="h-full max-w-7xl mt-12 px-12 pt-12 ml-2 bg-white bg-opacity-25 rounded-xl shadow-xl font-quando">
+      <div class="flex flex-col mt-2 mr-4 md:flex-row">
+        <div>
+          <h1 class="md:pl-6 md:ml-18 mb-8 text-2xl text-center text-black">
+            OUR SERVICES
+          </h1>
+        <div class="p-2 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-3 mb-8 ml-8">
+          <div class="rounded overflow-hidden shadow-lg mb-4" [routerLink]="['/location']">
+            <img class="w-full gimg" src="../../assets/img/location.jpg" alt="Location">
+            <div class="px-6 py-4">
+              <div class="font-bold text-black text-l mb-2">LOCATION</div>
+              <p class="text-black text-xs">
+                Perfect location is a perfect start. Leave the worry of wedding location and arrangement to us and enjoy your best day!
+              </p>
+            </div>
+            </div>
+          <div class="rounded overflow-hidden shadow-lg mb-4" [routerLink]="['/giftregistry']">
+            <img class="w-full gimg" src="../../assets/img/gift.png" alt="Gift registry">
+            <div class="px-6 py-4">
+              <div class="font-bold text-black text-l mb-2">GIFT REGISTRY</div>
+              <p class="text-black text-xs">
+                Thanksgiving gift to the guest is a beautiful way of honouring our dear ones. We get you the best arrangement done for the same.
+              </p>
+            </div>
+          </div>
+          <div class="rounded overflow-hidden shadow-lg mb-4 " [routerLink]="['/accomodation']">
+            <img class="w-full gimg" src="../../assets/img/accomodation.jpg" alt="Accomodation">
+            <div class="px-6 py-4">
+              <div class="font-bold text-black text-l mb-2">ACCOMODATION</div>
+              <p class="text-black text-xs">
+                Guests need to have the best place and hospitality. Small act of comfort, can go a long way in building lasting relationship. We take care of guest arrangements.
+              </p>
+            </div>
+          </div>
+            <div class="rounded overflow-hidden shadow-lg mb-4" [routerLink]="['/marriagecounselling']">
+              <img class="w-full gimg" src="../../assets/img/marital.jpg" alt="Marriage counselling">
+              <div class="px-6 py-4">
+                <div class="font-bold text-black text-l mb-2">MARRIAGE COUNSELLING</div>
+                <p class="text-black text-xs">
+                  Marriage counseling, or couples therapy, is a kind of counseling that focuses specifically on marriages and relationships.
+                </p>
+              </div>
+            </div>
+            <div class="rounded overflow-hidden shadow-lg mb-4" [routerLink]="['/premarriagecounselling']">
+              <img class="w-full gimg" src="../../assets/img/premarital.jpg" alt="Pre marriage counselling">
+              <div class="px-6 py-4">
+                <div class="font-bold text-black text-l mb-2">PRE-MARRIAGE COUNSELLING</div>
+                <p class="text-black text-xs">
+                  The purpose of Pre Marriage Counselling is to create a safe space for you and your partner to talk, as well as establish a partnership where you both feel seen, honoured and valued.
+                </p>
+              </div>
+            </div>
+            <div class="rounded overflow-hidden shadow-lg mb-4" [routerLink]="['/assistedservice']">
+              <img class="w-full gimg " src="../../assets/img/services.jpg" alt="Wedding assisted services">
+              <div class="px-6 py-4">
+                <div class="font-bold text-black text-l mb-2">Wedding assisted services</div>
+                <p class="text-black text-xs">
+                  Assisted Service is a personalised matchmaking service pioneer. It has helped thousands of members discover their perfect life partner. 
+                </p>
+              </div>
+            </div>
+        </div>
+        <p class="mb-8 mr-4 pb-8 float-right text-black" [routerLink]="['/contactus']">contact us ----></p>
+      </div> 
+      </div>
+      </div> 
+      </div>
+      <div>
+      </div>
+      </div>
 </body>

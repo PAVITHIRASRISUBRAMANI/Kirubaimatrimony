@@ -19,6 +19,12 @@ import { ResetpasswordComponent } from './resetpassword/resetpassword.component'
 import { TermsandconditionsComponent } from './termsandconditions/termsandconditions.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { CancellationandrefundComponent } from './cancellationandrefund/cancellationandrefund.component';
+import { LocationComponent } from './ourservices/location/location.component';
+import { GiftregistryComponent } from './ourservices/giftregistry/giftregistry.component';
+import { AccomodationComponent } from './ourservices/accomodation/accomodation.component';
+import { MarriagecounsellingComponent } from './ourservices/marriagecounselling/marriagecounselling.component';
+import { PremarriagecounsellingComponent } from './ourservices/premarriagecounselling/premarriagecounselling.component';
+import { AssistedserviceComponent } from './ourservices/assistedservice/assistedservice.component';
 
 
 @NgModule({
@@ -38,6 +44,12 @@ import { CancellationandrefundComponent } from './cancellationandrefund/cancella
     TermsandconditionsComponent,
     PrivacypolicyComponent,
     CancellationandrefundComponent,
+    LocationComponent,
+    GiftregistryComponent,
+    AccomodationComponent,
+    MarriagecounsellingComponent,
+    PremarriagecounsellingComponent,
+    AssistedserviceComponent,
   ],
   imports: [
     BrowserModule,
