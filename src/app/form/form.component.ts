@@ -14,6 +14,10 @@ export class FormComponent implements OnInit {
   submit(){
     this.step = this.step + 1;
   }
+  previous(){
+    this.step = this.step - 1;
+  }
+  
 }
   
 
